@@ -117,7 +117,7 @@ public class MainClass {
             } catch (IOException e) {
                 throw new RuntimeException("Error during create exchange rate tables list", e);
             }
-            return null;
+            return StringUtils.EMPTY;
 
         }).collect(Collectors.toList());
     }
